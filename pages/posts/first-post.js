@@ -3,10 +3,11 @@ import Link from "next/link";
 export default function FirstPost() {
     return (
         <>
-            <h1>First Post tee hee!</h1>
             <h2>
                 <Link href="/">
-                    <a>Back to home!</a>
+                    <a>
+                        imagine making a page, and then forgetting what you were going to do with it
+                    </a>
                 </Link>
             </h2>
         </>
