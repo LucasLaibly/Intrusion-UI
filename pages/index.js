@@ -1,20 +1,27 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
+//colors : #CCCC99(tan-shade) #FFFFFF(white) #006699(blue)
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>_One</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          | {' '}
+          <Link href="/posts/first-post">
+            <a>THIS PAGE!</a>
+          </Link>
+          {' '} |
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          <code>all it takes is all of your data.</code>
         </p>
 
         <div className="grid">
@@ -61,6 +68,7 @@ export default function Home() {
 
       <style jsx>{`
         .container {
+          background: #006699;
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
