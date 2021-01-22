@@ -1,66 +1,50 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
+//colors : #CCCC99(tan-shade) #FFFFFF(white) #006699(blue)
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>lineone</title>
+        <link rel="icon" href="/favicon.ico" /> //Todo: change this .ico image
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          <a>INTRUSION</a>
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          <code>all it takes is all of your data.</code>
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Link href='/lobby/create'>
+            <a className="card">
+              <h3>make a lobby</h3>
+              <p>set the name, set the stakes.</p>
+            </a>
+          </Link>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Link href='/lobby/join'>
+            <a className="card">
+              <h3>join a lobby</h3>
+              <p>get in on the game</p>
+            </a>
+          </Link>
         </div>
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
+        Powered by{' '}
+        <img src="/intrusion.svg" alt="Intrusion Logo" className="logo" />
+        _One
       </footer>
 
       <style jsx>{`
         .container {
+          background: #006699;
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
@@ -102,15 +86,13 @@ export default function Home() {
           text-decoration: none;
         }
 
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
+        h1 {
+          color: #FFFFFF;
         }
 
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
+        .title a {
+          color: #FFFFFF;
+          text-decoration: none;
         }
 
         .title {
@@ -143,7 +125,6 @@ export default function Home() {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
           max-width: 800px;
           margin-top: 3rem;
         }
@@ -152,18 +133,21 @@ export default function Home() {
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
-          text-align: left;
+          text-align: center;
           color: inherit;
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
+          background: #CCCC99;
+          width: 300px;
+          height: 300px;
         }
 
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
+          color: #FFFFFF;
           border-color: #0070f3;
         }
 
