@@ -1,14 +1,21 @@
 import Link from 'next/link'
+import Head from 'next/head'
+import Layout from '../../components/layout'
 
-export default function CreateLobby() {
-  return (
-    <>
-      <h1>SO CLOSE TO MAKING IT</h1>
-      <h2>
-        <Link href="/">
-          <a>I see you are trying to make a lobby huh</a>
-        </Link>
-      </h2>
-    </>
-  )
-}
+//colors : #6f9eaf(blueish) #a9294f(pink) #c7753d(orange) -> palette 226138
+export default function FirstPost() {
+    return (
+      <>
+        <Head>
+          <title>First Post</title>
+        </Head>
+        <h1>First Post</h1>
+        <h2>
+          <Link href="/">
+            <a>Back to home</a>
+          </Link>
+        </h2>
+      </>
+    )
+  }
+  
