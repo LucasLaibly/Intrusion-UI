@@ -2,20 +2,17 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 //colors : #CCCC99(tan-shade) #FFFFFF(white) #006699(blue)
-
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>_One</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>lineone</title>
+        <link rel="icon" href="/favicon.ico" /> //Todo: change this .ico image
       </Head>
 
       <main>
         <h1 className="title">
-          <Link href="/posts/first-post">
-            <a>INTRUSION</a>
-          </Link>
+          <a>INTRUSION</a>
         </h1>
 
         <p className="description">
@@ -23,27 +20,26 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>make a lobby</h3>
-            <p>set the name, set the stakes.</p>
-          </a>
+          <Link href='/lobby/create'>
+            <a className="card">
+              <h3>make a lobby</h3>
+              <p>set the name, set the stakes.</p>
+            </a>
+          </Link>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>join a lobby</h3>
-            <p>join in on what you are missing</p>
-          </a>
+          <Link href='/lobby/join'>
+            <a className="card">
+              <h3>join a lobby</h3>
+              <p>get in on the game</p>
+            </a>
+          </Link>
         </div>
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
+        Powered by{' '}
+        <img src="/intrusion.svg" alt="Intrusion Logo" className="logo" />
+        _One
       </footer>
 
       <style jsx>{`
@@ -97,12 +93,6 @@ export default function Home() {
         .title a {
           color: #FFFFFF;
           text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
         }
 
         .title {
