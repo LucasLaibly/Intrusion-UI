@@ -1,47 +1,32 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import Layout from '../../components/layout'
+import Lobby from '../../components/lobby'
 
 //colors : #6f9eaf(blueish) #a9294f(pink) #c7753d(orange) -> palette 226138
 export default function CreateALobby() {
-    return (
-      <>
-      <div className="container"> 
-          <Head>
-            <title>Create a Lobby</title>
-          </Head>
-          <a className="direction">
-            <main>
-                <code>MAKE A FUCKING LOBBY</code>
-            </main>
-          </a>
-          <grid>
-            <form>
-              <label for="uname">Userame</label>
-              <input type="text" id="uname" name="username" placeholder="Desired username.."/>
+  return (
+    <Lobby>
+      <div className="container color-code"> 
+        <form>
+          <div className="form-group">
+            <label for="uname">Userame</label>
+            <input type="text" id="username" name="username" placeholder="Desired username.."/>
+          </div>
+          <div className="form-group">
+            <label for="lname">Lobby Name</label>
+            <input type="text" id="lobbyname" name="lobbyname" placeholder="Desired Lobby Name.."/>
+          </div>
 
-              <label for="lname">Lobby Name</label>
-              <input type="text" id="lname" name="lobbyname" placeholder="Desired Lobby Name.."/> 
-            </form>
-          </grid>
-        </div>
+          <input type="submit" value="Create Lobby"/>
+        </form>
+      </div>
 
-        <style jsx>{`
-          .container {
-            background: #c7753d;
-            min-height: 100vh;
-            padding: 0 0.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
-
-          direction {
-            vertical-align: top;
-          }
-        `}</style>
-      </>
-    )
-  }
-  
+      <style jsx>{`
+        .color-code{
+          background: #6f9eaf;
+          min-height: 100vh;
+        }
+      `}</style>
+    </Lobby>
+  )
+}
