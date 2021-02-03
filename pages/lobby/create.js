@@ -16,6 +16,9 @@ export default function CreateALobby() {
             <label for="lname">Lobby Name</label>
             <input type="text" id="lobbyname" name="lobbyname" placeholder="Desired Lobby Name.."/>
           </div>
+          <div className="form-group">Browser Data
+            <label type="checkbox"></label>
+          </div>
 
           <input type="submit" value="Create Lobby"/>
         </form>
@@ -23,7 +26,7 @@ export default function CreateALobby() {
 
       <style jsx>{`
         .color-code{
-          background: #6f9eaf;
+          background: #c7753d;
           min-height: 100vh;
         }
       `}</style>

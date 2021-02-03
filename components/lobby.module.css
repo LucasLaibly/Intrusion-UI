@@ -23,7 +23,7 @@
 
 .input[type="submit"]{
     width: 100%;
-    background-color: #c7753d;
+    background-color: #6f9eaf;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -33,5 +33,5 @@
 }
 
 .input[type=submit]:hover {
-    background-color: #c7753d;
+    background-color: #6f9eaf;
 }
