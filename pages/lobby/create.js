@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Lobby from '../../components/lobby'
 
 //colors : #6f9eaf(blueish) #a9294f(pink) #c7753d(orange) -> palette 226138
-export default function CreateALobby() {
+export default function CreateLobby() {
   return (
     <Lobby>
       <div className="container color-code"> 
