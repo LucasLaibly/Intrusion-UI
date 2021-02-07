@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from 'next/head';
+import Link from 'next/link';
 
-//colors : #CCCC99(tan-shade) #FFFFFF(white) #006699(blue)
+// colors : #CCCC99(tan-shade) #FFFFFF(white) #006699(blue)
 export default function Home() {
   return (
     <div className="container">
@@ -20,14 +20,14 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <Link href='/lobby/create'>
+          <Link href="/lobby/create">
             <a className="card">
               <h3>make a lobby</h3>
               <p>set the name, set the stakes.</p>
             </a>
           </Link>
 
-          <Link href='/lobby/join'>
+          <Link href="/lobby/join">
             <a className="card">
               <h3>join a lobby</h3>
               <p>get in on the game</p>
@@ -37,12 +37,14 @@ export default function Home() {
       </main>
 
       <footer>
-        Powered by{' '}
+        Powered by
+        {' '}
         <img src="/intrusion.svg" alt="Intrusion Logo" className="logo" />
-        _One
+        LineOne
       </footer>
 
-      <style jsx>{`
+      <style jsx>
+        {`
         .container {
           background: #006699;
           min-height: 100vh;
@@ -172,9 +174,11 @@ export default function Home() {
             flex-direction: column;
           }
         }
-      `}</style>
+      `}
+      </style>
 
-      <style jsx global>{`
+      <style jsx global>
+        {`
         html,
         body {
           padding: 0;
@@ -187,7 +191,8 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
-      `}</style>
+      `}
+      </style>
     </div>
-  )
+  );
 }

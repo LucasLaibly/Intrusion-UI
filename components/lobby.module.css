@@ -6,7 +6,8 @@
 .form-group {
     display: flex;
     flex-direction: column;
-    margin: 0 0 15px;
+    margin-top: 20px;
+    padding: 100px 100px;
 }
 
 .form-group-label {
