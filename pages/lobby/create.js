@@ -18,19 +18,19 @@ const CreateLobby = () => {
         <form>
 
           <div className="form-group">
-            <Mui.TextField 
+            <Mui.TextField
               required
-              id="filled-required" 
+              id="filled-required"
               label="Username Required"
               defaultValue=""
-              variant="outlined" 
+              variant="outlined"
             />
           </div>
 
           <div className="form-group-secondary">
-            <Mui.TextField 
+            <Mui.TextField
               required
-              id="filled-required" 
+              id="filled-required"
               label="Lobby Name Required"
               defaultValue=""
               variant="outlined"
@@ -38,9 +38,9 @@ const CreateLobby = () => {
           </div>
 
           <div className="form-group-secondary">
-            <Mui.TextField 
+            <Mui.TextField
               disabled
-              id="lobbynumber" 
+              id="lobbynumber"
               defaultValue={randomNumber}
               variant="outlined"
             />
@@ -81,7 +81,6 @@ const CreateLobby = () => {
       </style>
     </Lobby>
   );
-
-}
+};
 
 export default CreateLobby;
