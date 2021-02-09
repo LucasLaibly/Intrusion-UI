@@ -62,7 +62,6 @@ const CreateLobby = () => {
           </div>
 
         </form>
-
       </div>
 
       <style jsx>
