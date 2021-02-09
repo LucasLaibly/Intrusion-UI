@@ -8,9 +8,9 @@ const JoinLobby = () => (
   <Lobby>
     <div className="container color-code">
       <code>
-        Join an existing lobby! Have fun :D
+        JOIN A LOBBY :D
       </code>
-
+      
       <form>
 
         <div className="grid">
@@ -66,6 +66,9 @@ const JoinLobby = () => (
 
         .container {
           flex-direction: column;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         .form-group {
