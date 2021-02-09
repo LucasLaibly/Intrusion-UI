@@ -7,6 +7,10 @@ import Lobby from '../../components/lobby';
 const JoinLobby = () => (
   <Lobby>
     <div className="container color-code">
+      <code>
+        Join an existing lobby! Have fun :D
+      </code>
+
       <form>
 
         <div className="grid">
@@ -59,11 +63,14 @@ const JoinLobby = () => (
           background: #c70039;
           min-height: 100vh;
         }
+
         .container {
           flex-direction: column;
         }
+
         .form-group {
           flex-direction: column;
+          margin-top: 18px;
         }
 
         .form-group-secondary {
@@ -74,31 +81,19 @@ const JoinLobby = () => (
           display: flex;
           align-items: center;
           justify-content: center;
-          flex-wrap: wrap;
-          max-width: 800px;
-          margin-top: 3rem;
         }
 
         .card {
-          margin: 1rem;
-          flex-basis: 45%;
+          margin: 3rem;
           padding: 1.5rem;
           text-align: center;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
           background: #FFFFFF;
           width: 300px;
           height: 300px;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #FFFFFF;
-          border-color: #0070f3;
         }
 
         .card h3 {
@@ -110,6 +105,13 @@ const JoinLobby = () => (
           margin: 0;
           font-size: 1.25rem;
           line-height: 1.5;
+        }
+
+        .code {
+          background: #fafafa;
+          margin-top: 20px;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
       `}
     </style>
