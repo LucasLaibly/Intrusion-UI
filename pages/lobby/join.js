@@ -54,7 +54,6 @@ const JoinLobby = () => (
         </div>
 
       </form>
-
     </div>
 
     <style jsx>
