@@ -8,9 +8,9 @@ const JoinLobby = () => (
   <Lobby>
     <div className="container color-code">
       <code>
-        JOIN A LOBBY :D
+        JOIN A LOBBY
       </code>
-      
+
       <form>
 
         <div className="grid">
