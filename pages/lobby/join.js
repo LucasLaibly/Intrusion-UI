@@ -8,7 +8,7 @@ const JoinLobby = () => (
   <Lobby>
     <div className="container color-code">
       <code>
-        JOIN A LOBBY
+        ENTER LOBBY CREDENTIALS
       </code>
 
       <form>
@@ -49,7 +49,7 @@ const JoinLobby = () => (
 
         <div className="form-group-secondary">
           <Mui.Button variant="contained">
-            Join Lobby
+            Enter Lobby
           </Mui.Button>
         </div>
 
