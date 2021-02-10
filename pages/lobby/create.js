@@ -51,6 +51,26 @@ const CreateLobby = () => {
                   variant="outlined"
                 />
               </div>
+              <Mui.FormControlLabel
+                value="end"
+                control={<Mui.Checkbox color="primary" />}
+                label="Internet Browser History"
+                labelPlacement="end"
+              />
+
+              <Mui.FormControlLabel
+                value="end"
+                control={<Mui.Checkbox color="primary" />}
+                label="Browser Bookmarks"
+                labelPlacement="end"
+              />
+
+              <Mui.FormControlLabel
+                value="end"
+                control={<Mui.Checkbox color="primary" />}
+                label=" your nudes"
+                labelPlacement="end"
+              />
             </a>
 
           </div>
@@ -103,7 +123,7 @@ const CreateLobby = () => {
           transition: color 0.15s ease, border-color 0.15s ease;
           background: #FFFFFF;
           width: 300px;
-          height: 300px;
+          height: 400px;
         }
 
         .card h3 {
