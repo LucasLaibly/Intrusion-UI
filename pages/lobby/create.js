@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import * as Mui from '@material-ui/core';
 import Lobby from '../../components/lobby';
+import React, {useState} from 'react';
 
 
 // colors : #6f9eaf(blueish) #a9294f(pink) #c7753d(orange) -> palette 226138
