@@ -2,15 +2,12 @@ import Link from 'next/link';
 import Head from 'next/head';
 import * as Mui from '@material-ui/core';
 import Lobby from '../../components/lobby';
+import React, {useState} from 'react';
 
-function getRandomLobbyNumber() {
-  lobbyNumber = Math.floor(100000 + Math.random() * 900000).toString;
-  return lobbyNumber;
-}
 
 // colors : #6f9eaf(blueish) #a9294f(pink) #c7753d(orange) -> palette 226138
 const CreateLobby = () => {
-  const randomNumber = getRandomLobbyNumber;
+  const [randomNumber] = useState(Math.floor(100000 + Math.random() * 900000))
 
   return (
     <Lobby>
